@@ -1,0 +1,4 @@
+name: dog-breed
+recipe: drupal9
+config:
+  webroot: web
