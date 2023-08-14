@@ -1,5 +1,11 @@
 dog_breed.dog_breed_api.settings:
-  title: 'Dog breed settings'
+  title: 'Dog Breed API Config'
   route_name: dog_breed.dog_breed_api.settings
-  description: 'Dog breed settings'
+  description: 'Define the API route'
+  parent: system.admin_config_services
+
+dog_breed.dog_breed_my_slug.settings:
+  title: 'Dog Breed My Slug'
+  route_name: dog_breed.dog_breed_my_slug.settings
+  description: 'Define a custom slug'
   parent: system.admin_config_services

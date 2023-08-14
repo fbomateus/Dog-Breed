@@ -10,7 +10,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\ClientException;
 
 /**
- * Class Dog Breed Api Service.
+ * Class Dog Breed API Service.
  *
  * @package Drupal\dog_breed\Service
  */
@@ -38,14 +38,14 @@ class DogBreedApiService {
   protected $logger;
 
   /**
-   * The baseURL from promo admin.
+   * The baseURL from Dog Breed API.
    *
    * @var string
    */
   private $baseUrl;
 
   /**
-   * Construct to campaign API service.
+   * Construct to Dog Breed API service.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The config factory service.

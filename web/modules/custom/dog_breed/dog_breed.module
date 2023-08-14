@@ -17,5 +17,12 @@ function dog_breed_theme() {
         'data' => NULL,
       ],
     ],
+    'dog_breed_my_slug' => [
+      'render element' => 'children',
+      'template' => 'dog-breed-my-slug',
+      'variables' => [
+        'data' => NULL,
+      ],
+    ],
   ];
 }

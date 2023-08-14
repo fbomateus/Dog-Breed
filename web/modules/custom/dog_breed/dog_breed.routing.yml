@@ -2,7 +2,7 @@ dog_breed.dog_breed_api.settings:
   path: '/admin/config/services/dog-breed-api-settings'
   defaults:
     _form: '\Drupal\dog_breed\Form\DogBreedApiForm'
-    _title: 'Dog Breed API config form'
+    _title: 'Dog Breed API Config'
   requirements:
     _permission: 'administer site configuration'
   options:
@@ -21,3 +21,13 @@ dog_breed.dog_breed_list:
     _controller: '\Drupal\dog_breed\Controller\DogBreedViewResultsController::dogBreedListPage'
   requirements:
     _permission: 'access content'
+
+dog_breed.dog_breed_my_slug.settings:
+  path: '/admin/config/services/dog-breed-my-slug-settings'
+  defaults:
+    _form: '\Drupal\dog_breed\Form\DogBreedMySlugForm'
+    _title: 'Dog Breed My Slug'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

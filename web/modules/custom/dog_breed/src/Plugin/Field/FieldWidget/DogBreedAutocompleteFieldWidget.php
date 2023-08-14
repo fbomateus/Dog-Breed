@@ -28,7 +28,7 @@ class DogBreedAutocompleteFieldWidget extends WidgetBase implements ContainerFac
   use StringTranslationTrait;
 
   /**
-   * The campaign API service.
+   * The dog breed API service.
    *
    * @var \Drupal\dog_breed\Service\DogBreedApiService
    */
@@ -48,7 +48,7 @@ class DogBreedAutocompleteFieldWidget extends WidgetBase implements ContainerFac
    * @param array $third_party_settings
    *   Any third party settings.
    * @param \Drupal\dog_breed\Service\DogBreedApiService $dog_breed_api
-   *   The campaign API service.
+   *   The dog breed API service.
    */
   public function __construct(
     $plugin_id,
