@@ -14,3 +14,10 @@ dog_breed.autocomplete:
     _controller: '\Drupal\dog_breed\Controller\DogBreedAutoCompleteController::handleAutocomplete'
   requirements:
     _permission: 'administer site configuration'
+
+dog_breed.dog_breed_list:
+  path: '/dog-breeds'
+  defaults:
+    _controller: '\Drupal\dog_breed\Controller\DogBreedViewResultsController::dogBreedListPage'
+  requirements:
+    _permission: 'access content'

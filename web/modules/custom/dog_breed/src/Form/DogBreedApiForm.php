@@ -4,7 +4,7 @@ namespace Drupal\dog_breed\Form;
 
 /**
  * @file
- * Contains \Drupal\dog_breed\Form\AbinbevCdpSettingsForm.
+ * Contains \Drupal\dog_breed\Form\DogBreedApiForm.
  */
 
 use Drupal\Core\Form\ConfigFormBase;

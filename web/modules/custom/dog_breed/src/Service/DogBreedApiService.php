@@ -181,4 +181,24 @@ class DogBreedApiService {
 
     return $response ?? [];
   }
+
+  /**
+   * Breeds image by name.
+   *
+   * @param string $name
+   *   The name of the breed.
+   * 
+   * @return array
+   *   The query result.
+   *
+   * @throws \Exception
+   */
+  public function getBreedsImageByName($name): array {
+    if (!empty($name)) {
+      $slug = str_replace('-', '/', $name);
+      $breed_image = $this->request('/breed/' . $slug . '/images/random');
+    }
+
+    return $breed_image;
+  }
 }

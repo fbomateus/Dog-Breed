@@ -22,6 +22,7 @@
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
         "drupal/devel": "^5.1",
+        "drupal/imagecache_external": "^3.0",
         "drush/drush": "^11.6"
     },
     "conflict": {

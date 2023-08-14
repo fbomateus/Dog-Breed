@@ -5,3 +5,9 @@ services:
       - '@config.factory'
       - '@http_client'
       - '@logger.factory'
+
+  dog_breed.dog_breed_view_result.service:  
+    class: Drupal\dog_breed\Service\DogBreedViewResultsService
+    arguments: 
+      - '@dog_breed.dog_breed_api.service'
+      - '@entity_type.manager'

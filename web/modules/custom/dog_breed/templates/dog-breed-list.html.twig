@@ -1,0 +1,10 @@
+<div class="main-breed">
+  <div class="content row">
+    {% for item in data %}
+      <div class="col-md-4">
+        <img src="{{ item.image|imagecache_external('breeds') }}" class="img-fluid" alt="{{ item.label }}" />
+        <div class="name text-center">{{ item.label }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
