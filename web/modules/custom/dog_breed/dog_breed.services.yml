@@ -1,0 +1,7 @@
+services:
+  dog_breed.dog_breed_api.service:  
+    class: Drupal\dog_breed\Service\DogBreedApiService
+    arguments:
+      - '@config.factory'
+      - '@http_client'
+      - '@logger.factory'

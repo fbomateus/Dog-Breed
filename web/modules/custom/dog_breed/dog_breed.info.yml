@@ -1,0 +1,5 @@
+name: Dog Breed
+type: module
+description: A custom HTTP client
+core_version_requirement: ^9.2 || ^10
+package: Custom

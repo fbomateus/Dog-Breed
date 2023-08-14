@@ -1,0 +1,16 @@
+dog_breed.dog_breed_api.settings:
+  path: '/admin/config/services/dog-breed-api-settings'
+  defaults:
+    _form: '\Drupal\dog_breed\Form\DogBreedApiForm'
+    _title: 'Dog Breed API config form'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+dog_breed.autocomplete:
+  path: '/admin/dog_breed/autocomplete'
+  defaults:
+    _controller: '\Drupal\dog_breed\Controller\DogBreedAutoCompleteController::handleAutocomplete'
+  requirements:
+    _permission: 'administer site configuration'

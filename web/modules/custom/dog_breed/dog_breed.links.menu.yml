@@ -1,0 +1,5 @@
+dog_breed.dog_breed_api.settings:
+  title: 'Dog breed settings'
+  route_name: dog_breed.dog_breed_api.settings
+  description: 'Dog breed settings'
+  parent: system.admin_config_services
