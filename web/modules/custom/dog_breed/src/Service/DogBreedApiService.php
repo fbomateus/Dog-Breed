@@ -151,32 +151,34 @@ class DogBreedApiService {
    * @throws \Exception
    */
   public function getListAllBreedsByName($name): array {
-    $breeds = $this->request('/breeds/list/all');
-    $results = [];
-
-    foreach ($breeds['message'] as $key => $breed) {
-      if (!empty($breed)) {
-        foreach ($breed as $subBreed) {
+    if (!empty($name)) {
+      $breeds = $this->request('/breeds/list/all');
+      $results = [];
+  
+      foreach ($breeds['message'] as $key => $breed) {
+        if (!empty($breed)) {
+          foreach ($breed as $subBreed) {
+            $results[] = [
+              "value" => $key . "-" . $subBreed,
+              "label" => ucwords($subBreed . " " . $key),
+            ];
+          }
+        } else {
           $results[] = [
-            "value" => $key . "-" . $subBreed,
-            "label" => ucwords($subBreed . " " . $key),
+            "value" => $key,
+            "label" => ucwords($key),
           ];
         }
-      } else {
-        $results[] = [
-          "value" => $key,
-          "label" => ucwords($key),
-        ];
+      }
+  
+      $response = [];
+      foreach ($results as $result) {
+        if (str_contains($result["value"], $name) || str_contains($result["label"], $name)) {
+          $response[] = $result;
+        }
       }
     }
 
-    $response = [];
-    foreach ($results as $result) {
-      if (str_contains($result["value"], $name) || str_contains($result["label"], $name)) {
-        $response[] = $result;
-      }
-    }
-
-    return $response;
+    return $response ?? [];
   }
 }
