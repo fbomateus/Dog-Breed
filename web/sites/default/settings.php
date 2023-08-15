@@ -844,3 +844,7 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_fScDwnEyMrXqD8YlmQWIlKpNHCAaFN10cmGsLx7WH-z4U3dVdf-DTpntEVmpp8Ply4Lr2asdeQ/sync';
+
+# Redirect each message to a single address
+$config['mail_redirect.settings']['mail_redirect_opt'] = 'address';
+$config['mail_redirect.settings']['mail_redirect_address'] = 'nope@doesntexist.com';

@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains dog_breeds.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function dog_breed_theme() {
+  return [
+    'dog_breed_list' => [
+      'render element' => 'children',
+      'template' => 'dog-breed-list',
+      'variables' => [
+        'data' => NULL,
+      ],
+    ],
+    'dog_breed_my_slug' => [
+      'render element' => 'children',
+      'template' => 'dog-breed-my-slug',
+      'variables' => [
+        'data' => NULL,
+      ],
+    ],
+  ];
+}

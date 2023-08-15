@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Dog breed list specific CSS.
+ */
+
+ .block-page-title-block h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.block-system-main-block .main-breed {
+  margin: 0 0 50px 0;
+}
+
+.block-system-main-block .main-breed .item {
+  margin-top: 20px;
+}
+
+.block-system-main-block .main-breed .item img {
+  border-radius: 10px;
+}
+
+.block-system-main-block .main-breed .item .name {
+  color: #2b2b2b;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.block-system-main-block .main-breed .item .name:hover {
+  text-decoration: underline;
+}

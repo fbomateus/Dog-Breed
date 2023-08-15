@@ -1,0 +1,31 @@
+/**
+ * @file
+ * Dog breed my slug specific CSS.
+ */
+
+.block-dog-breed-my-slug-block h2 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 2;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.block-dog-breed-my-slug-block .main-breed {
+  margin: 0 0 50px 0;
+}
+
+.block-dog-breed-my-slug-block .main-breed .custom-slug img {
+  border-radius: 10px;
+}
+
+.block-dog-breed-my-slug-block .main-breed .custom-slug .name {
+  color: #2b2b2b;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.block-dog-breed-my-slug-block .main-breed .custom-slug .name:hover {
+  text-decoration: underline;
+}
