@@ -16,6 +16,10 @@
   margin: 0 0 50px 0;
 }
 
+.block-system-main-block .main-breed .item {
+  margin-top: 20px;
+}
+
 .block-system-main-block .main-breed .item img {
   border-radius: 10px;
 }
