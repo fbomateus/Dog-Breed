@@ -2,7 +2,7 @@
   <div class="content row">
     {% for item in data %}
       <div class="col-md-3 text-center item">
-        <img src="{{ item.image|imagecache_external('breeds') }}" class="img-fluid" alt="{{ item.label }}" />
+        <img src="{{ item.image|imagecache_external('breeds') }}" class="img-fluid" loading="lazy" alt="{{ item.label }}" />
         <div class="name fw-light">{{ item.label }}</div>
       </div>
     {% endfor %}
