@@ -14,14 +14,19 @@ You need to have this installed to configure this project locally:
 
 After install Lando follow these steps:
 
+- Install Composer dependencies.
+```sh
+> composer install
+```
+
 - Build and start containers in your local environment.
 ```sh
 > lando start
 ```
 
-- After starting lando you need to install composer.
+- Import database.
 ```sh
-> lando composer install
+> lando db-import db/dump.sql.gz
 ```
 
 Access website as administrator:
