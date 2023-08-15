@@ -29,6 +29,11 @@ After install Lando follow these steps:
 > lando db-import db/dump.sql.gz
 ```
 
+- Clear cache.
+```sh
+> lando drush cr
+```
+
 Access website as administrator:
 
 - Generate url with drush.
