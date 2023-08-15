@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd7d23d614b9bf911a1c907a6d9c3371",
+    "content-hash": "74e275378bb5f1e520a4bac6663b3739",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2106,6 +2106,50 @@
             "homepage": "https://www.drupal.org/project/imagecache_external",
             "support": {
                 "source": "https://git.drupalcode.org/project/imagecache_external"
+            }
+        },
+        {
+            "name": "drupal/mail_redirect",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/mail_redirect.git",
+                "reference": "4.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mail_redirect-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "4169de0c304a8a1ef42ff6a043e8210057621d83"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.1",
+                    "datestamp": "1657057164",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "liquidcms",
+                    "homepage": "https://www.drupal.org/user/44114"
+                }
+            ],
+            "description": "Used for testing mail functions on test sites with real emails addresses in the db. Redirects ALL system generated email to a test mail domain or address.",
+            "homepage": "https://www.drupal.org/project/mail_redirect",
+            "support": {
+                "source": "https://git.drupalcode.org/project/mail_redirect"
             }
         },
         {
