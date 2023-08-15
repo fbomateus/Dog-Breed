@@ -21,6 +21,7 @@
 
 #main-wrapper {
   min-height: calc(100vh - 260px);
+  background-color: #f8f9fc;
 }
 
 .site-footer {

@@ -106,6 +106,11 @@ class DogBreedMySlugBlock extends BlockBase implements ContainerFactoryPluginInt
     return [
       '#theme' => 'dog_breed_my_slug',
       '#data' => $results,
+      '#attached' => [
+        'library' => [
+          'dog_breed/dog_breed_my_slug',
+        ],
+      ],
     ];
   }
 }
