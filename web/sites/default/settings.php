@@ -724,6 +724,10 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  *
  * @see https://www.drupal.org/docs/installing-drupal/trusted-host-settings
  */
+$settings['trusted_host_patterns'] = [
+  '^dog-breed\.lndo\.site$',
+  '^localhost$',      
+];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
@@ -839,6 +843,9 @@ $databases['default']['default'] = array (
   'prefix' => '',
   'host' => 'database',
   'port' => '',
+  'init_commands' => [
+    'isolation_level' => 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+  ],
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
