@@ -3,3 +3,9 @@ dog_breed_my_slug:
   css:
     theme:
       css/dog-breed-my-slug.css: {}
+
+dog_breed_list:
+  version: 1.x
+  css:
+    theme:
+      css/dog-breed-list.css: {}

@@ -43,6 +43,11 @@ class DogBreedViewResultsController extends ControllerBase {
     return [
       '#theme' => 'dog_breed_list',
       '#data' => $results,
+      '#attached' => [
+        'library' => [
+          'dog_breed/dog_breed_list',
+        ],
+      ],
     ];
   }
 }

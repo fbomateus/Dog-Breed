@@ -19,6 +19,7 @@ dog_breed.dog_breed_list:
   path: '/dog-breeds'
   defaults:
     _controller: '\Drupal\dog_breed\Controller\DogBreedViewResultsController::dogBreedListPage'
+    _title: 'Dog Breed List'
   requirements:
     _permission: 'access content'
 
